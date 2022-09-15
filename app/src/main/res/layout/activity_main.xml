@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background_col"
+        android:id="@+id/relative"
+        android:layout_height="130dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/instaServer"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Insta Server"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/instaServer"
+            android:background="#E8275E"
+            android:scrollbars="horizontal"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Photo" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/reels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reel" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/igtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="igtv" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="pic" />
+        </com.google.android.material.tabs.TabLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="20dp"
+        android:layout_height="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="1dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:padding="10dp"
+                android:id="@+id/linkText"
+                android:layout_marginRight="4dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:background="@drawable/back"
+                android:hint="Enter the link here"
+                android:layout_height="match_parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:minWidth="1dp"
+                app:cardBackgroundColor="#E8275E"
+                app:cardCornerRadius="10dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Get Content"
+                        android:id="@+id/getContentButton"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:padding="15sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="35dp"
+        android:layout_height="60dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="#E8275E"
+            android:padding="10dp"
+            app:cardCornerRadius="15sp"
+            android:layout_marginBottom="30sp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/white"
+                android:id="@+id/downloadButton"
+                android:text="Download"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:padding="14dp"
+                android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
