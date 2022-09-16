@@ -11,19 +11,19 @@
         android:layout_width="match_parent"
         android:background="@drawable/background_col"
         android:id="@+id/relative"
-        android:layout_height="130dp">
+        android:layout_height="110dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:id="@+id/instaServer"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="0dp"
             android:orientation="horizontal"
-            android:layout_height="50dp">
+            android:layout_height="35dp">
 
             <TextView
                 android:layout_width="match_parent"
-                android:text="Insta Server"
-                android:textSize="30sp"
+                android:text="Instagram Server"
+                android:textSize="25sp"
                 android:fontFamily="sans-serif-condensed"
                 android:textAlignment="textStart"
                 android:textStyle="bold"
@@ -134,10 +134,10 @@
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="5dp"
         android:layout_below="@+id/relative"
         android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp" />
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="5dp" />
 
     <!--<LinearLayout
         android:layout_width="match_parent"

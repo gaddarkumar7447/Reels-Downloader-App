@@ -71,9 +71,9 @@
         <ImageView
             android:id="@+id/particularPhoto"
             android:layout_width="match_parent"
-            android:background="@drawable/back"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
+            android:background="@drawable/back"
             android:fitsSystemWindows="true" />
     </RelativeLayout>
 
@@ -88,7 +88,6 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
             app:cardBackgroundColor="#E8275E"
             android:padding="10dp"
             app:cardCornerRadius="15sp"

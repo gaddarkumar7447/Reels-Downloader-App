@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.status));
+        //getWindow().setStatusBarColor(ContextCompat.getColor(this,R.color.status));
         mphoto = findViewById(R.id.photo);
         mvideo = findViewById(R.id.video);
         mreels = findViewById(R.id.reels);
